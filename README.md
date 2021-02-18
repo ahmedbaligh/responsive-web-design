@@ -1,7 +1,3 @@
-# Top Level Heading
+# Tribute Page - Responsive Web Design Certification
 
-```python
-for (const item of items) {
-  return;
-}
-```
+Simple web page design about a tribute to an influential figure, Dr. Ahmed Zewail.
