@@ -1,0 +1,170 @@
+/*   Global   */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: 300 15px 'Josefin Sans', sans-serif;
+  background-color: #fff;
+  text-align: center;
+  --section-background: rgba(240, 238, 238, 0.678);
+}
+
+a,
+a:hover {
+  color: inherit;
+}
+
+/*    Header    */
+
+header {
+  text-align: center;
+  background-color: var(--section-background);
+  margin: 40px 0 80px;
+  padding: 80px 0;
+}
+
+#title {
+  padding-bottom: 20px;
+  font-size: 4rem;
+}
+
+header p {
+  font-size: 1.3rem;
+}
+
+/*     Main Content    */
+
+main {
+  margin: 100px 0;
+}
+
+figure {
+  background-color: var(--section-background);
+}
+
+#img-div {
+  width: 90%;
+  padding: 8% 4%;
+  margin: auto;
+}
+
+#image {
+  display: block;
+  max-width: 100%;
+  border-radius: 5px;
+  padding-bottom: 8px;
+}
+
+#tribute-info {
+  background-color: var(--section-background);
+  margin: 100px 0;
+  padding: 8% 12%;
+}
+
+#tribute-info h2 {
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  margin: 0 0 70px;
+}
+
+dl {
+  text-align: start;
+}
+
+dt {
+  font: 400 15px 'Alata', sans-serif;
+  font-size: 1.4rem;
+  margin: 30px 0 15px;
+}
+
+dd {
+  margin: 10px 0;
+  padding-left: 20px;
+  font-size: 1.2rem;
+}
+
+dd::before {
+  content: '• ';
+  color: gray;
+}
+
+.quote {
+  background-color: var(--section-background);
+  padding: 100px 10px 70px;
+  margin-bottom: 100px;
+}
+
+blockquote {
+  font-size: 2rem;
+  line-height: 1.4;
+  position: relative;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+blockquote::before,
+blockquote::after {
+  position: absolute;
+  color: #b6b4aa;
+  font-size: 8rem;
+  width: 4rem;
+  height: 4rem;
+}
+
+blockquote::before {
+  content: '“';
+  left: -5rem;
+  top: -2rem;
+}
+
+blockquote::after {
+  content: '”';
+  right: -5rem;
+  bottom: 3rem;
+}
+
+cite {
+  display: block;
+  line-height: 3;
+  font-size: 1.5rem;
+}
+
+.more-info {
+  font-style: italic;
+  line-height: 1.6;
+  padding: 10px 80px;
+  color: steelblue;
+}
+
+a {
+  text-decoration: none;
+  color: darkslategrey;
+}
+
+a:hover {
+  color: teal;
+}
+
+@media (max-width: 767px) {
+  #title {
+    font-size: 3rem;
+  }
+
+  #tribute-info h2 {
+    font-size: 2rem;
+  }
+
+  dl {
+    text-align: center;
+  }
+
+  dd::before {
+    content: '— ';
+  }
+}
