@@ -1,0 +1,128 @@
+/*    Global     */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: radial-gradient(circle, #1f3756, #141539);
+  color: #fff;
+}
+
+header {
+  text-align: center;
+  margin: 50px 0;
+}
+
+header #title {
+  font: 2.5rem Monaco, monospace;
+}
+
+header p {
+  padding: 10px;
+  font: 0.9rem Monaco, monospace;
+}
+
+main {
+  margin: 50px auto;
+  width: 55%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  font: 1.3rem 'Poppins', sans-serif;
+}
+
+form > * {
+  margin: 30px 0 30px;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='number'],
+#dropdown,
+.suggestions textarea {
+  margin-top: 10px;
+  padding: 0 15px;
+  width: 100%;
+  height: 90%;
+  border-color: #1f3756;
+  border-radius: 6px;
+  font-size: 1.1rem;
+}
+
+#dropdown {
+  font: inherit;
+  font-size: 1.2rem;
+}
+
+option {
+  padding: 0 15px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+.feature,
+.perfer {
+  margin: 30px 0 0;
+}
+
+.feature p,
+.perfer p,
+.suggestions p {
+  margin-bottom: 20px;
+}
+
+.feature span {
+  font-size: 1.1rem;
+  font-style: italic;
+}
+
+.feature label,
+.perfer label {
+  display: block;
+  margin: 10px 0;
+}
+
+.feature input,
+.perfer input {
+  margin-right: 8px;
+}
+
+.suggestions textarea {
+  margin: 0;
+  padding: 15px;
+  font: inherit;
+}
+
+[type='submit'] {
+  cursor: pointer;
+  margin-top: 50px;
+  height: 50px;
+  color: #fff;
+  font: inherit;
+  padding: 10px 0;
+  background-color: green;
+}
+
+input:focus,
+textarea:focus,
+[type='submit']:focus {
+  border-color: rgb(0, 162, 255);
+  outline: none;
+}
