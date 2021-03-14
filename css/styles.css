@@ -1,0 +1,217 @@
+/*    Global    */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fff;
+  font: 300 16px 'Montserrat', sans-serif;
+}
+
+.container {
+  margin: 0 50px;
+}
+
+img {
+  width: 100%;
+}
+
+/*    Header    */
+
+#header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 50px 10px;
+  background-color: rgb(71, 90, 255);
+  color: #fff;
+}
+
+#brand {
+  display: flex;
+  align-items: center;
+}
+
+#brand h1 {
+  font: 2rem 'RocknRoll One', sans-serif;
+}
+
+#brand a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+#header-img {
+  width: 40px;
+  height: 30px;
+  margin-right: 20px;
+  filter: invert(70%) brightness(300%);
+}
+
+#nav-bar {
+  min-width: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-link {
+  padding: 10px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #fff;
+}
+
+.nav-link:hover {
+  color: rgb(27, 27, 92, 0.5);
+}
+
+/*    Main Content    */
+
+main.container {
+  margin-top: 70px;
+  margin-bottom: 100px;
+}
+
+.newsletter {
+  text-align: center;
+  margin: 0 0 100px;
+  padding: 20px 10px;
+}
+
+.newsletter h2 {
+  font: 1.5rem 'RocknRoll One', sans-serif;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#email {
+  width: 25%;
+  font-size: 15px;
+  line-height: 2;
+  padding: 0 10px;
+  margin-bottom: 15px;
+}
+
+input#submit {
+  width: 15%;
+}
+
+#features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 0;
+  /* border: 1px solid blue; */
+}
+
+.feature {
+  width: 80%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.feature:last-of-type {
+  margin: 0;
+}
+
+.feature-info {
+  width: fit-content;
+}
+
+.feature-title {
+  margin-bottom: 10px;
+  font-size: 1.7rem;
+}
+
+.feature-description {
+  font-size: 15px;
+}
+
+.feature img {
+  width: 60px;
+  margin-right: 50px;
+}
+
+#product-video {
+  text-align: center;
+  margin: 100px auto;
+  height: max-content;
+}
+
+@media (max-width: 799px) {
+  #video {
+    width: 100%;
+  }
+}
+
+#pricings {
+  padding: 0 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.pricing {
+  border: 1px solid gray;
+  text-align: center;
+}
+
+.price-title {
+  font-size: 1.7rem;
+  background-color: rgb(17, 143, 175);
+  color: #fff;
+  padding: 15px;
+}
+
+.price {
+  font-size: 2rem;
+  margin: 20px 0;
+}
+
+.price-description {
+  margin: 30px 0 40px;
+}
+
+.price-description p {
+  margin: 8px 0;
+  font-size: 15px;
+}
+
+.pricing button[type='submit'],
+#submit {
+  margin-bottom: 20px;
+  font: 14px/2 'RocknRoll One', sans-serif;
+  letter-spacing: 0.12em;
+  width: 35%;
+  padding: 4px 0;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: rgb(17, 143, 175);
+  color: #fff;
+  outline: none;
+  border-radius: 6px;
+  border-width: 1px;
+}
+
+.pricing button[type='submit']:hover {
+  background-color: rgba(17, 143, 175, 0.8);
+}
